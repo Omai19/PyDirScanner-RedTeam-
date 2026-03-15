@@ -3,7 +3,7 @@
 
 ---
 
-## ⚠️ Avertissement Légal
+## ⚠️ Avertissement 
 L'utilisation de PyDirScanner doit s'inscrire strictement dans un cadre légal (audit de sécurité autorisé, CTF, machines virtuelles privées). Ce script est conçu à des fins éducatives. L'utilisateur assume l'entière responsabilité de ses actes. Les attaques sur des systèmes tiers sans autorisation sont illégales.
 
 ## 📋 Description du Projet
@@ -11,7 +11,7 @@ PyDirScanner est un outil de reconnaissance réseau (Red Team) développé en Py
 
 Ce projet permet d'appréhender le fonctionnement des requêtes HTTP et de comprendre comment un attaquant (ou un auditeur) cartographie une surface d'attaque web de manière automatisée.
 
-## 📂 Architecture Technique
+## Architecture Technique
 ```text
 PyDirScanner/
 │
