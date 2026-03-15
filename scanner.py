@@ -14,7 +14,7 @@ def scanner_repertoire(url_cible, chemin_wordlist):
     """
     Lit une wordlist et teste chaque répertoire sur le serveur cible.
     """
-    # Nettoyage de l'URL cible (s'assurer qu'elle se termine par une barre oblique '/')
+    
     if not url_cible.endswith('/'):
         url_cible += '/'
 
@@ -35,7 +35,7 @@ def scanner_repertoire(url_cible, chemin_wordlist):
             for index, ligne in enumerate(lignes, 1):
                 mot = ligne.strip()
                 if not mot:
-                    continue # Ignorer les lignes vides
+                    continue # Ignore les lignes vides
                 
                 url_complete = url_cible + mot
                 
@@ -54,9 +54,9 @@ def scanner_repertoire(url_cible, chemin_wordlist):
                         sys.stdout.write('\r' + ' ' * 60 + '\r')
                         
                         if reponse.status_code == 200:
-                            statut = "🟢 200 OK"
+                            statut = " 200 OK"
                         else:
-                            statut = "🟠 403 FORBIDDEN"
+                            statut = "403 FORBIDDEN"
                             
                         print(f"[+] TROUVÉ [{statut}] : /{mot}")
                         repertoires_trouves.append(f"/{mot} (Code {reponse.status_code})")
@@ -83,7 +83,7 @@ def scanner_repertoire(url_cible, chemin_wordlist):
         for rep in repertoires_trouves:
             print(f"   {rep}")
     else:
-        print("  ❌ Aucun répertoire caché n'a été trouvé.")
+        print("   Aucun répertoire caché n'a été trouvé.")
 
 def main():
     print_banner()
