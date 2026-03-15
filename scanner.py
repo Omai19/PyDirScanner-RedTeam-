@@ -6,7 +6,7 @@ import time
 def print_banner():
     print("""
 =================================================
-       🕵️  PyDirScanner V1.5 (Pro Edition)
+              PyDirScanner V1.5 
 =================================================
     """)
 
@@ -77,11 +77,11 @@ def scanner_repertoire(url_cible, chemin_wordlist):
     # Affichage du rapport final
     sys.stdout.write('\r' + ' ' * 60 + '\r') # Nettoyage de la dernière ligne
     print("-" * 50)
-    print("📋 RAPPORT DE SCAN")
+    print("RAPPORT DE SCAN")
     print("-" * 50)
     if repertoires_trouves:
         for rep in repertoires_trouves:
-            print(f"  👉 {rep}")
+            print(f"   {rep}")
     else:
         print("  ❌ Aucun répertoire caché n'a été trouvé.")
 
