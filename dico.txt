@@ -1,0 +1,11 @@
+admin
+login
+wp-admin
+backup
+test
+api
+images
+css
+js
+robots.txt
+sitemap.xml
